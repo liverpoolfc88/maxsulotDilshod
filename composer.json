@@ -1,0 +1,5 @@
+{
+    "require": {
+        "lubosdz/yii2-captcha-extended": "^1.0"
+    }
+}
