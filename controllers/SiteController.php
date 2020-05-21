@@ -194,13 +194,13 @@ class SiteController extends Controller
             'captcha' => [
             'class' => 'lubosdz\captchaExtended\CaptchaExtendedAction',
             // optionally, set mode and obfuscation properties e.g.:
-            'mode' => 'math',
+//            'mode' => 'math',
             // 'mode' => CaptchaExtendedAction::MODE_MATH,
-            'resultMultiplier' => 5,
-            'lines' => 5,
-            'density' => 10,
-            'height' => 50,
-            'width' => 150,
+//            'resultMultiplier' => 5,
+//            'lines' => 5,
+//            'density' => 10,
+//            'height' => 50,
+//            'width' => 150,
         ],
         ]);
     }
