@@ -5570,3 +5570,677 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2020-05-22 09:01:14 [127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OpenServer\domains\sash/messages/uz-UZ/app.php Fallback file does not exist as well: D:\OpenServer\domains\sash/messages/uz/app.php
+    in D:\OpenServer\domains\sash\views\site\signup.php:37
+    in D:\OpenServer\domains\sash\controllers\SiteController.php:193
+2020-05-22 09:01:17 [127.0.0.1][-][-][error][yii\base\ErrorException:256] yii\base\ErrorException: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\captcha\CaptchaAction::getVerifyResult()' 
+
+in D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 D:\OpenServer\domains\sash\vendor\lubosdz\yii2-captcha-extended\CaptchaExtendedValidator.php(22): yii\base\Component->__call('getVerifyResult', Array)
+#1 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(833): lubosdz\captchaExtended\CaptchaExtendedValidator->clientValidateAttribute(Object(app\models\SignupForm), 'verifyCode', Object(yii\web\View))
+#2 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(233): yii\widgets\ActiveField->getClientOptions()
+#3 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(223): yii\widgets\ActiveField->begin()
+#4 D:\OpenServer\domains\sash\vendor\yiisoft\yii2-bootstrap\src\ActiveField.php(187): yii\widgets\ActiveField->render('\n<div class="te...')
+#5 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(176): yii\bootstrap\ActiveField->render()
+#6 D:\OpenServer\domains\sash\views\site\signup.php(43): yii\widgets\ActiveField->__toString()
+#7 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#8 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#9 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\SiteController))
+#10 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('signup', Array, Object(app\controllers\SiteController))
+#11 D:\OpenServer\domains\sash\controllers\SiteController.php(193): yii\base\Controller->render('signup', Array)
+#12 [internal function]: app\controllers\SiteController->actionSignup()
+#13 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#16 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#17 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OpenServer\domains\sash\web\index.php(12): yii\base\Application->run()
+#19 {main} in D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\ErrorHandler.php:331
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception 'yii\\...', 'D:\\OpenServer\\d...', 331, Array)
+#1 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\ErrorHandler.php(331): trigger_error('Exception 'yii\\...', 256)
+#2 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownMethodException))
+#3 D:\OpenServer\domains\sash\views\site\signup.php(43): yii\widgets\ActiveField->__toString()
+#4 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#5 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', '[<span class="s...')
+#6 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\SiteController))
+#7 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('signup', Array, Object(app\controllers\SiteController))
+#8 D:\OpenServer\domains\sash\controllers\SiteController.php(193): yii\base\Controller->render('signup', Array)
+#9 [internal function]: app\controllers\SiteController->actionSignup()
+#10 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#13 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#14 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\OpenServer\domains\sash\web\index.php(12): yii\base\Application->run()
+#16 {main}
+    in D:\OpenServer\domains\sash\views\site\signup.php:43
+    in D:\OpenServer\domains\sash\controllers\SiteController.php:193
+2020-05-22 09:01:13 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8f56588d228ec53490d3d9fc2f15b9ce21054294fb6ad7db8beaf80ce3e4f65fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UaTkDl-j_z1JDixcfJyLQUO_ae6D0eMM\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sash'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://sash/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8f56588d228ec53490d3d9fc2f15b9ce21054294fb6ad7db8beaf80ce3e4f65fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UaTkDl-j_z1JDixcfJyLQUO_ae6D0eMM%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sash'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/sash'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/sash'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/sash/web/index.php'
+    'REMOTE_PORT' => '51143'
+    'REDIRECT_URL' => '/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1590127273.769
+    'REQUEST_TIME' => 1590127273
+    'argv' => []
+    'argc' => 0
+]
+2020-05-22 09:01:28 [127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OpenServer\domains\sash/messages/uz-UZ/app.php Fallback file does not exist as well: D:\OpenServer\domains\sash/messages/uz/app.php
+    in D:\OpenServer\domains\sash\views\site\signup.php:37
+    in D:\OpenServer\domains\sash\controllers\SiteController.php:193
+2020-05-22 09:01:28 [127.0.0.1][-][-][error][yii\base\ErrorException:256] yii\base\ErrorException: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\captcha\CaptchaAction::getVerifyResult()' 
+
+in D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 D:\OpenServer\domains\sash\vendor\lubosdz\yii2-captcha-extended\CaptchaExtendedValidator.php(22): yii\base\Component->__call('getVerifyResult', Array)
+#1 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(833): lubosdz\captchaExtended\CaptchaExtendedValidator->clientValidateAttribute(Object(app\models\SignupForm), 'verifyCode', Object(yii\web\View))
+#2 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(233): yii\widgets\ActiveField->getClientOptions()
+#3 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(223): yii\widgets\ActiveField->begin()
+#4 D:\OpenServer\domains\sash\vendor\yiisoft\yii2-bootstrap\src\ActiveField.php(187): yii\widgets\ActiveField->render('\n<div class="te...')
+#5 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(176): yii\bootstrap\ActiveField->render()
+#6 D:\OpenServer\domains\sash\views\site\signup.php(43): yii\widgets\ActiveField->__toString()
+#7 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#8 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#9 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\SiteController))
+#10 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('signup', Array, Object(app\controllers\SiteController))
+#11 D:\OpenServer\domains\sash\controllers\SiteController.php(193): yii\base\Controller->render('signup', Array)
+#12 [internal function]: app\controllers\SiteController->actionSignup()
+#13 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#16 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#17 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OpenServer\domains\sash\web\index.php(12): yii\base\Application->run()
+#19 {main} in D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\ErrorHandler.php:331
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception 'yii\\...', 'D:\\OpenServer\\d...', 331, Array)
+#1 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\ErrorHandler.php(331): trigger_error('Exception 'yii\\...', 256)
+#2 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownMethodException))
+#3 D:\OpenServer\domains\sash\views\site\signup.php(43): yii\widgets\ActiveField->__toString()
+#4 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#5 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', '[<span class="s...')
+#6 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\SiteController))
+#7 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('signup', Array, Object(app\controllers\SiteController))
+#8 D:\OpenServer\domains\sash\controllers\SiteController.php(193): yii\base\Controller->render('signup', Array)
+#9 [internal function]: app\controllers\SiteController->actionSignup()
+#10 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#13 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#14 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\OpenServer\domains\sash\web\index.php(12): yii\base\Application->run()
+#16 {main}
+    in D:\OpenServer\domains\sash\views\site\signup.php:43
+    in D:\OpenServer\domains\sash\controllers\SiteController.php:193
+2020-05-22 09:01:28 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8f56588d228ec53490d3d9fc2f15b9ce21054294fb6ad7db8beaf80ce3e4f65fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UaTkDl-j_z1JDixcfJyLQUO_ae6D0eMM\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sash'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://sash/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8f56588d228ec53490d3d9fc2f15b9ce21054294fb6ad7db8beaf80ce3e4f65fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UaTkDl-j_z1JDixcfJyLQUO_ae6D0eMM%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sash'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/sash'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/sash'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/sash/web/index.php'
+    'REMOTE_PORT' => '51146'
+    'REDIRECT_URL' => '/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1590127288.729
+    'REQUEST_TIME' => 1590127288
+    'argv' => []
+    'argc' => 0
+]
+2020-05-22 09:02:16 [127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OpenServer\domains\sash/messages/uz-UZ/app.php Fallback file does not exist as well: D:\OpenServer\domains\sash/messages/uz/app.php
+    in D:\OpenServer\domains\sash\views\site\signup.php:37
+    in D:\OpenServer\domains\sash\controllers\SiteController.php:193
+2020-05-22 09:02:16 [127.0.0.1][-][-][error][yii\base\ErrorException:256] yii\base\ErrorException: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\captcha\CaptchaAction::getVerifyResult()' 
+
+in D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 D:\OpenServer\domains\sash\vendor\lubosdz\yii2-captcha-extended\CaptchaExtendedValidator.php(22): yii\base\Component->__call('getVerifyResult', Array)
+#1 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(833): lubosdz\captchaExtended\CaptchaExtendedValidator->clientValidateAttribute(Object(app\models\SignupForm), 'verifyCode', Object(yii\web\View))
+#2 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(233): yii\widgets\ActiveField->getClientOptions()
+#3 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(223): yii\widgets\ActiveField->begin()
+#4 D:\OpenServer\domains\sash\vendor\yiisoft\yii2-bootstrap\src\ActiveField.php(187): yii\widgets\ActiveField->render('<label class="c...')
+#5 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(176): yii\bootstrap\ActiveField->render()
+#6 D:\OpenServer\domains\sash\views\site\signup.php(41): yii\widgets\ActiveField->__toString()
+#7 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#8 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#9 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\SiteController))
+#10 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('signup', Array, Object(app\controllers\SiteController))
+#11 D:\OpenServer\domains\sash\controllers\SiteController.php(193): yii\base\Controller->render('signup', Array)
+#12 [internal function]: app\controllers\SiteController->actionSignup()
+#13 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#16 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#17 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OpenServer\domains\sash\web\index.php(12): yii\base\Application->run()
+#19 {main} in D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\ErrorHandler.php:331
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception 'yii\\...', 'D:\\OpenServer\\d...', 331, Array)
+#1 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\ErrorHandler.php(331): trigger_error('Exception 'yii\\...', 256)
+#2 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownMethodException))
+#3 D:\OpenServer\domains\sash\views\site\signup.php(41): yii\widgets\ActiveField->__toString()
+#4 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#5 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', '[<span class="s...')
+#6 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\SiteController))
+#7 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('signup', Array, Object(app\controllers\SiteController))
+#8 D:\OpenServer\domains\sash\controllers\SiteController.php(193): yii\base\Controller->render('signup', Array)
+#9 [internal function]: app\controllers\SiteController->actionSignup()
+#10 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#13 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#14 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\OpenServer\domains\sash\web\index.php(12): yii\base\Application->run()
+#16 {main}
+    in D:\OpenServer\domains\sash\views\site\signup.php:41
+    in D:\OpenServer\domains\sash\controllers\SiteController.php:193
+2020-05-22 09:02:16 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8f56588d228ec53490d3d9fc2f15b9ce21054294fb6ad7db8beaf80ce3e4f65fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UaTkDl-j_z1JDixcfJyLQUO_ae6D0eMM\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sash'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://sash/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8f56588d228ec53490d3d9fc2f15b9ce21054294fb6ad7db8beaf80ce3e4f65fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UaTkDl-j_z1JDixcfJyLQUO_ae6D0eMM%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sash'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/sash'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/sash'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/sash/web/index.php'
+    'REMOTE_PORT' => '51149'
+    'REDIRECT_URL' => '/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1590127336.553
+    'REQUEST_TIME' => 1590127336
+    'argv' => []
+    'argc' => 0
+]
+2020-05-22 09:03:34 [127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OpenServer\domains\sash/messages/uz-UZ/app.php Fallback file does not exist as well: D:\OpenServer\domains\sash/messages/uz/app.php
+    in D:\OpenServer\domains\sash\views\site\signup.php:37
+    in D:\OpenServer\domains\sash\controllers\SiteController.php:193
+2020-05-22 09:03:35 [127.0.0.1][-][-][error][yii\base\ErrorException:256] yii\base\ErrorException: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\captcha\CaptchaAction::getVerifyResult()' 
+
+in D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 D:\OpenServer\domains\sash\vendor\lubosdz\yii2-captcha-extended\CaptchaExtendedValidator.php(22): yii\base\Component->__call('getVerifyResult', Array)
+#1 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(833): lubosdz\captchaExtended\CaptchaExtendedValidator->clientValidateAttribute(Object(app\models\SignupForm), 'verifyCode', Object(yii\web\View))
+#2 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(233): yii\widgets\ActiveField->getClientOptions()
+#3 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(223): yii\widgets\ActiveField->begin()
+#4 D:\OpenServer\domains\sash\vendor\yiisoft\yii2-bootstrap\src\ActiveField.php(187): yii\widgets\ActiveField->render('\n<div class="te...')
+#5 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(176): yii\bootstrap\ActiveField->render()
+#6 D:\OpenServer\domains\sash\views\site\signup.php(40): yii\widgets\ActiveField->__toString()
+#7 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#8 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#9 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\SiteController))
+#10 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('signup', Array, Object(app\controllers\SiteController))
+#11 D:\OpenServer\domains\sash\controllers\SiteController.php(193): yii\base\Controller->render('signup', Array)
+#12 [internal function]: app\controllers\SiteController->actionSignup()
+#13 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#16 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#17 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OpenServer\domains\sash\web\index.php(12): yii\base\Application->run()
+#19 {main} in D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\ErrorHandler.php:331
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception 'yii\\...', 'D:\\OpenServer\\d...', 331, Array)
+#1 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\ErrorHandler.php(331): trigger_error('Exception 'yii\\...', 256)
+#2 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownMethodException))
+#3 D:\OpenServer\domains\sash\views\site\signup.php(40): yii\widgets\ActiveField->__toString()
+#4 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#5 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', '[<span class="s...')
+#6 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\SiteController))
+#7 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('signup', Array, Object(app\controllers\SiteController))
+#8 D:\OpenServer\domains\sash\controllers\SiteController.php(193): yii\base\Controller->render('signup', Array)
+#9 [internal function]: app\controllers\SiteController->actionSignup()
+#10 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#13 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#14 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\OpenServer\domains\sash\web\index.php(12): yii\base\Application->run()
+#16 {main}
+    in D:\OpenServer\domains\sash\views\site\signup.php:40
+    in D:\OpenServer\domains\sash\controllers\SiteController.php:193
+2020-05-22 09:03:34 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8f56588d228ec53490d3d9fc2f15b9ce21054294fb6ad7db8beaf80ce3e4f65fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UaTkDl-j_z1JDixcfJyLQUO_ae6D0eMM\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sash'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://sash/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8f56588d228ec53490d3d9fc2f15b9ce21054294fb6ad7db8beaf80ce3e4f65fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UaTkDl-j_z1JDixcfJyLQUO_ae6D0eMM%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sash'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/sash'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/sash'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/sash/web/index.php'
+    'REMOTE_PORT' => '51158'
+    'REDIRECT_URL' => '/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1590127414.896
+    'REQUEST_TIME' => 1590127414
+    'argv' => []
+    'argc' => 0
+]
+2020-05-22 09:04:10 [127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OpenServer\domains\sash/messages/uz-UZ/app.php Fallback file does not exist as well: D:\OpenServer\domains\sash/messages/uz/app.php
+    in D:\OpenServer\domains\sash\views\site\signup.php:37
+    in D:\OpenServer\domains\sash\controllers\SiteController.php:193
+2020-05-22 09:04:10 [127.0.0.1][-][-][error][yii\base\ErrorException:256] yii\base\ErrorException: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\captcha\CaptchaAction::getVerifyResult()' 
+
+in D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 D:\OpenServer\domains\sash\vendor\lubosdz\yii2-captcha-extended\CaptchaExtendedValidator.php(22): yii\base\Component->__call('getVerifyResult', Array)
+#1 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(833): lubosdz\captchaExtended\CaptchaExtendedValidator->clientValidateAttribute(Object(app\models\SignupForm), 'verifyCode', Object(yii\web\View))
+#2 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(233): yii\widgets\ActiveField->getClientOptions()
+#3 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(223): yii\widgets\ActiveField->begin()
+#4 D:\OpenServer\domains\sash\vendor\yiisoft\yii2-bootstrap\src\ActiveField.php(187): yii\widgets\ActiveField->render('\n<div class="te...')
+#5 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(176): yii\bootstrap\ActiveField->render()
+#6 D:\OpenServer\domains\sash\views\site\signup.php(43): yii\widgets\ActiveField->__toString()
+#7 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#8 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#9 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\SiteController))
+#10 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('signup', Array, Object(app\controllers\SiteController))
+#11 D:\OpenServer\domains\sash\controllers\SiteController.php(193): yii\base\Controller->render('signup', Array)
+#12 [internal function]: app\controllers\SiteController->actionSignup()
+#13 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#16 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#17 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OpenServer\domains\sash\web\index.php(12): yii\base\Application->run()
+#19 {main} in D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\ErrorHandler.php:331
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception 'yii\\...', 'D:\\OpenServer\\d...', 331, Array)
+#1 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\ErrorHandler.php(331): trigger_error('Exception 'yii\\...', 256)
+#2 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownMethodException))
+#3 D:\OpenServer\domains\sash\views\site\signup.php(43): yii\widgets\ActiveField->__toString()
+#4 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#5 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', '[<span class="s...')
+#6 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\SiteController))
+#7 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('signup', Array, Object(app\controllers\SiteController))
+#8 D:\OpenServer\domains\sash\controllers\SiteController.php(193): yii\base\Controller->render('signup', Array)
+#9 [internal function]: app\controllers\SiteController->actionSignup()
+#10 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#13 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#14 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\OpenServer\domains\sash\web\index.php(12): yii\base\Application->run()
+#16 {main}
+    in D:\OpenServer\domains\sash\views\site\signup.php:43
+    in D:\OpenServer\domains\sash\controllers\SiteController.php:193
+2020-05-22 09:04:10 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8f56588d228ec53490d3d9fc2f15b9ce21054294fb6ad7db8beaf80ce3e4f65fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UaTkDl-j_z1JDixcfJyLQUO_ae6D0eMM\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sash'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://sash/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8f56588d228ec53490d3d9fc2f15b9ce21054294fb6ad7db8beaf80ce3e4f65fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UaTkDl-j_z1JDixcfJyLQUO_ae6D0eMM%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sash'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/sash'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/sash'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/sash/web/index.php'
+    'REMOTE_PORT' => '51159'
+    'REDIRECT_URL' => '/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1590127450.722
+    'REQUEST_TIME' => 1590127450
+    'argv' => []
+    'argc' => 0
+]
+2020-05-22 10:11:44 [127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OpenServer\domains\sash/messages/uz-UZ/app.php Fallback file does not exist as well: D:\OpenServer\domains\sash/messages/uz/app.php
+    in D:\OpenServer\domains\sash\views\site\signup.php:37
+    in D:\OpenServer\domains\sash\controllers\SiteController.php:193
+2020-05-22 10:11:44 [127.0.0.1][-][-][error][yii\base\ErrorException:256] yii\base\ErrorException: Exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\captcha\CaptchaAction::getVerifyResult()' 
+
+in D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Component.php:300
+
+Stack trace:
+#0 D:\OpenServer\domains\sash\vendor\lubosdz\yii2-captcha-extended\CaptchaExtendedValidator.php(22): yii\base\Component->__call('getVerifyResult', Array)
+#1 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(833): lubosdz\captchaExtended\CaptchaExtendedValidator->clientValidateAttribute(Object(app\models\SignupForm), 'verifyCode', Object(yii\web\View))
+#2 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(233): yii\widgets\ActiveField->getClientOptions()
+#3 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(223): yii\widgets\ActiveField->begin()
+#4 D:\OpenServer\domains\sash\vendor\yiisoft\yii2-bootstrap\src\ActiveField.php(187): yii\widgets\ActiveField->render('\n<div class="te...')
+#5 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(176): yii\bootstrap\ActiveField->render()
+#6 D:\OpenServer\domains\sash\views\site\signup.php(43): yii\widgets\ActiveField->__toString()
+#7 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#8 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#9 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\SiteController))
+#10 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('signup', Array, Object(app\controllers\SiteController))
+#11 D:\OpenServer\domains\sash\controllers\SiteController.php(193): yii\base\Controller->render('signup', Array)
+#12 [internal function]: app\controllers\SiteController->actionSignup()
+#13 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#16 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#17 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OpenServer\domains\sash\web\index.php(12): yii\base\Application->run()
+#19 {main} in D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\ErrorHandler.php:331
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception 'yii\\...', 'D:\\OpenServer\\d...', 331, Array)
+#1 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\ErrorHandler.php(331): trigger_error('Exception 'yii\\...', 256)
+#2 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\widgets\ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownMethodException))
+#3 D:\OpenServer\domains\sash\views\site\signup.php(43): yii\widgets\ActiveField->__toString()
+#4 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(348): require('D:\\OpenServer\\d...')
+#5 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', '[<span class="s...')
+#6 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(app\controllers\SiteController))
+#7 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('signup', Array, Object(app\controllers\SiteController))
+#8 D:\OpenServer\domains\sash\controllers\SiteController.php(193): yii\base\Controller->render('signup', Array)
+#9 [internal function]: app\controllers\SiteController->actionSignup()
+#10 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#13 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#14 D:\OpenServer\domains\sash\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\OpenServer\domains\sash\web\index.php(12): yii\base\Application->run()
+#16 {main}
+    in D:\OpenServer\domains\sash\views\site\signup.php:43
+    in D:\OpenServer\domains\sash\controllers\SiteController.php:193
+2020-05-22 10:11:43 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8f56588d228ec53490d3d9fc2f15b9ce21054294fb6ad7db8beaf80ce3e4f65fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UaTkDl-j_z1JDixcfJyLQUO_ae6D0eMM\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sash'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://sash/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8f56588d228ec53490d3d9fc2f15b9ce21054294fb6ad7db8beaf80ce3e4f65fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UaTkDl-j_z1JDixcfJyLQUO_ae6D0eMM%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sash'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/sash'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/sash'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/sash/web/index.php'
+    'REMOTE_PORT' => '50729'
+    'REDIRECT_URL' => '/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1590131503.784
+    'REQUEST_TIME' => 1590131503
+    'argv' => []
+    'argc' => 0
+]
+2020-05-22 10:19:56 [127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\OpenServer\domains\sash/messages/uz-UZ/app.php Fallback file does not exist as well: D:\OpenServer\domains\sash/messages/uz/app.php
+    in D:\OpenServer\domains\sash\views\site\signup.php:37
+    in D:\OpenServer\domains\sash\controllers\SiteController.php:204
+2020-05-22 10:19:55 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '8f56588d228ec53490d3d9fc2f15b9ce21054294fb6ad7db8beaf80ce3e4f65fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UaTkDl-j_z1JDixcfJyLQUO_ae6D0eMM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => '45-5='
+    '__captcha/site/captchacount' => 1
+    '__captcha/site/captcharesult' => '40'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'sash'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://sash/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=8f56588d228ec53490d3d9fc2f15b9ce21054294fb6ad7db8beaf80ce3e4f65fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UaTkDl-j_z1JDixcfJyLQUO_ae6D0eMM%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.3\\ext;d:\\openserver\\modules\\php\\PHP_7.3\\pear;d:\\openserver\\modules\\php\\PHP_7.3\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.3;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sash'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/sash'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/sash'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/sash/web/index.php'
+    'REMOTE_PORT' => '53721'
+    'REDIRECT_URL' => '/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1590131995.297
+    'REQUEST_TIME' => 1590131995
+    'argv' => []
+    'argc' => 0
+]

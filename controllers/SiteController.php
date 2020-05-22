@@ -52,9 +52,20 @@ class SiteController extends Controller
             'error' => [
                 'class' => 'yii\web\ErrorAction',
             ],
+//            'captcha' => [
+//                'class' => 'yii\captcha\CaptchaAction',
+//                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+//            ],
             'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+                'class' => 'lubosdz\captchaExtended\CaptchaExtendedAction',
+                // optionally, set mode and obfuscation properties e.g.:
+                'mode' => 'math',
+                //'mode' => CaptchaExtendedAction::MODE_MATH,
+                //'resultMultiplier' => 5,
+                //'lines' => 5,
+                //'density' => 10,
+                //'height' => 50,
+                //'width' => 150,
             ],
         ];
     }
