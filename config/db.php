@@ -2,9 +2,9 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=sash',
+    'dsn' => 'mysql:host=localhost;dbname=dili',
     'username' => 'root',
-    'password' => 'root',
+    'password' => '',
     'charset' => 'utf8',
     'tablePrefix' => 'yangilik_'
 

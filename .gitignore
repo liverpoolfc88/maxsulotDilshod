@@ -29,3 +29,7 @@ phpunit.phar
 
 tests/_output/*
 tests/_support/_generated
+config/db.php
+config/db.php
+runtime/debug/index.data
+*.log
