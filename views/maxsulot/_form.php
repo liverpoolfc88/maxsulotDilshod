@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use mihaildev\ckeditor\CKEditor;
+//use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Maxsulot */
@@ -9,9 +11,9 @@ use yii\widgets\ActiveForm;
 ?>
 <div class="container">
 
-<div class="col-md-4"></div>
+<div class="col-md-2"></div>
 
-<div class="col-md-4">
+<div class="col-md-8">
 
 <div style="background-color: white; padding: 15px" class="row">
 <div class="maxsulot-form">
@@ -22,8 +24,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'maxsulot_photo')->fileInput()->label(false);?>
 
-    <?= $form->field($model, 'maxsulot_short')->textInput(['maxlength' => true]) ?>
 
+
+   <?= $form->field($model, 'maxsulot_short')->widget(CKEditor::className(),[
+    'editorOptions' => [
+    'preset' => 'full', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
+    'inline' => false, //по умолчанию false
+    ] ]) ?>
    
 
   
@@ -38,5 +45,5 @@ use yii\widgets\ActiveForm;
     
 </div>
 
-<div class="col-md-4"></div>
+<div class="col-md-2"></div>
 </div>

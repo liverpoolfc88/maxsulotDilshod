@@ -1,5 +1,6 @@
 {
     "require": {
-        "lubosdz/yii2-captcha-extended": "^1.0"
+        "lubosdz/yii2-captcha-extended": "^1.0",
+        "mihaildev/yii2-ckeditor": "*"
     }
 }

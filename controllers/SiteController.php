@@ -13,7 +13,7 @@ use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
-
+use yii\data\Pagination;
 
 class SiteController extends Controller
 {
@@ -93,12 +93,18 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-       
-          
-       
-        $maxsulot=Maxsulot::find()->all();
+
+        $maxsulot=Maxsulot::find();
+
+        $pagination = new Pagination([
+           'defaultPageSize' => 4,
+            'totalCount' => $maxsulot->count()
+        ]);
+        $maxsulot=$maxsulot->offset($pagination->offset)->limit($pagination->limit)->all();
+
         return $this->render('index',[
             'maxsulot'=>$maxsulot,
+            'pagination' => $pagination
            
 
         ]);

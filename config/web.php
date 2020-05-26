@@ -12,9 +12,11 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
-     'modules' => [
-        'inter' => [
-            'class' => 'app\modules\inter\module',
+
+
+    'modules' => [
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
         ],
     ],
     'components' => [

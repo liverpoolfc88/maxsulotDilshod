@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Url;
+use yii\widgets\LinkPager;
 /* @var $this yii\web\View */
 
 $this->title = 'My products';
@@ -14,10 +15,10 @@ $this->title = 'My products';
 
            <h4>Tab</h4>
 
-        <table class="table table-striped">
+              <table class="table table-striped">
 
-       
-          <thead class="thed"> 
+
+          <thead class="thed">
                 <tr>
                   <th>T/R</th>
                   <th>Maxsulot nomi</th>
@@ -30,12 +31,12 @@ $this->title = 'My products';
                     <a style="color: white" href="<?=Url::to(['maxsulot/create']);?>"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> add</a>
                   </th>
                   <?}?>
-                 
+
                 </tr>
             </thead>
-         
+
           <tbody>
-             <? foreach ($maxsulot as $key => $value) {?>       
+             <? foreach ($maxsulot as $key => $value) {?>
             <tr>
                   <th scope="row"><?=$key+1?></th>
                   <td><?=$value->maxsulot_name?></td>
@@ -49,14 +50,19 @@ $this->title = 'My products';
                   <td>
                     <a href="<?=Url::to(['maxsulot/update','id'=>$value->id]);?>"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
                       <a href="<?=Url::to(['maxsulot/delete','id'=>$value->id]);?>" title="Delete" aria-label="Delete" data-pjax="0" data-confirm="Ushbu bo`lim o`chirib tashlansinmi?" data-method="post"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
-                   
+
                   </td><?}?>
-                  
-                
+
+
             </tr>
               <?}?>
           </tbody>
         </table>
+              <div class="col-sm-6 text-left">
+                  <?= LinkPager::widget([
+                      'pagination' => $pagination,
+                  ]);?>
+              </div>
           </div>
 
            
@@ -64,11 +70,6 @@ $this->title = 'My products';
     </div>
 
 
- <style type="text/css">
-        .tugma{
-          text-align: center;
-        }
-      </style>
        <style type="text/css">
         .thed{
             padding-top: 12px;
