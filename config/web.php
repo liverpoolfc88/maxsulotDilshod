@@ -15,11 +15,17 @@ $config = [
 
 
     'modules' => [
-        'admin' => [
+        'sardor' => [
             'class' => 'app\modules\admin\Module',
         ],
+        'rbac' => [
+            'class' => 'mdm\admin\Module',
+            ]
     ],
     'components' => [
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\DbManager'
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '@!sardor',
@@ -69,6 +75,15 @@ $config = [
             ],
         ],
         
+    ],
+    'as access' => [
+        'class' => 'mdm\admin\components\AccessControl',
+        'allowActions' => [
+            'site/*',
+            'sardor/*',
+            'rbac/*',
+            'maxsulot/index/*',
+        ]
     ],
     'params' => $params,
 ];

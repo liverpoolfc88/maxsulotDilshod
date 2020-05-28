@@ -40,8 +40,8 @@ AppAsset::register($this);
                            
                           
                             <li><a href="<?=Yii::$app->UrlManager->createUrl(['/site/index'])?>">HOME</a></li>
-                            <li><a href="<?=Yii::$app->UrlManager->createUrl(['/admin/default/index'])?>">Admin</a></li>
-                            <li><a href="<?=Yii::$app->UrlManager->createUrl(['/admin/maxsulot/index'])?>">Maxsulot</a></li>
+                            <li><a href="<?=Yii::$app->UrlManager->createUrl(['/sardor/default/index'])?>">Admin</a></li>
+<!--                            <li><a href="--><?//=Yii::$app->UrlManager->createUrl(['/sardor/maxsulot/index'])?><!--">Maxsulot</a></li>-->
 
                            
 
