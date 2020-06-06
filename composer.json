@@ -1,7 +1,6 @@
 {
     "require": {
         "lubosdz/yii2-captcha-extended": "^1.0",
-        "mihaildev/yii2-ckeditor": "*",
-        "mdmsoft/yii2-admin": "~2.0"
+        "mihaildev/yii2-ckeditor": "*"
     }
 }
